@@ -1,0 +1,171 @@
+@media (max-width: $breakpoint_sm) {
+    .opportunity{
+        margin-top: 50px;
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            &__container{
+                flex-direction: column;
+                display: flex;
+
+                &__opportInfo{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &__title{
+                        text-align: center;
+                        font-size: 24px;
+                        padding: 0 20px;
+                    }
+    
+                    &__subtitle{
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+    
+                &__opportGrid{
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(6, 1fr);
+                    gap: 10px;
+
+                    &__item{
+                        padding: 5px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: ($breakpoint_sm + 1)) and (max-width: $breakpoint_md) {
+    .opportunity{
+        margin-top: 50px;
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+    
+            &__container{
+                flex-direction: column;
+                align-items: center;
+                &__opportInfo{
+    
+                    &__title{
+                        text-align: center;
+                    }
+    
+                    &__subtitle{
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+    
+                &__opportGrid{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    gap: 10px;
+    
+                    &__item{
+                        padding: 5px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: ($breakpoint_md + 1)) and (max-width: $breakpoint_lg) {
+    .opportunity{
+        margin-top: 50px;
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+    
+            &__container{
+                flex-direction: column;
+                align-items: center;
+                &__opportInfo{
+    
+                    &__title{
+                        text-align: center;
+                    }
+    
+                    &__subtitle{
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+    
+                &__opportGrid{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    gap: 10px;
+    
+                    &__item{
+                        padding: 5px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: ($breakpoint_lg + 1)) and (max-width: $breakpoint_lx) {
+    .opportunity{
+        margin-top: 50px;
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+    
+            &__container{
+                flex-direction: column;
+                align-items: center;
+                &__opportInfo{
+    
+                    &__title{
+                        text-align: center;
+                    }
+    
+                    &__subtitle{
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+    
+                &__opportGrid{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    gap: 10px;
+    
+                    &__item{
+                        padding: 5px;
+    
+                    }
+                }
+            }
+        }
+    }
+}

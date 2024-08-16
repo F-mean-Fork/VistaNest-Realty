@@ -1,0 +1,68 @@
+.opportunity{
+    margin-top: 100px;
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__container{
+            font-family: 'Manrope', sans-serif;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+
+            &__opportInfo{
+
+                &__title{
+                    text-transform: uppercase;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+
+                &__subtitle{
+                    margin-top: 20px;
+
+                    width: 60%;
+                }
+            }
+
+            &__opportGrid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 20px;
+
+                &__item{
+                    border: 2px solid rgba(169, 111, 68, 0.2);
+                    border-radius: 10px;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    padding: 10px 15px;
+
+                    &__pic{
+                        background: linear-gradient(93.12deg, rgba(169, 111, 68, 0.65) -8.85%, rgba(242, 236, 182, 0.65) 229.03%);
+                        border-radius: 10px;
+                        margin-right: 10px;
+                        width: 60px;
+                        height: 60px;
+                        display: flex;
+                        padding: 5px;
+                        justify-content: center;
+                        align-items: center;
+
+                        &__thumb{
+                            width: 65%;
+                            background-image: white;
+                        }
+                    }
+                
+                    &__desc{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}

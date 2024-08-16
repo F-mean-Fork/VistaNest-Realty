@@ -1,0 +1,108 @@
+.qustions{
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        &__container{
+            font-family: 'Manrope', sans-serif;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 30px;
+            height: 420px;
+
+
+            &__formWrap{
+                background: url("../img/questions-bg.png");
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 50px;
+                height: 100%;
+                width: 100%;
+                
+
+                &__form{
+                        
+                    label {
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                    
+                    input[type="text"], 
+                    input[type="email"],
+                    input[type="message"] {
+                        font-size: 14px;
+                        width: 100%;
+                        height: 40px;
+                        margin-bottom: 20px;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        opacity: 0.85;
+                        border-radius: 10px;
+                    }
+
+                    textarea {
+                        opacity: 0.85;
+                        font-size: 14px;
+                        font-family: 'Manrope', sans-serif;
+                        border: 1px solid #ccc;
+                        border-radius: 10px;
+                        padding: 10px;
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                    button[type="submit"] {
+                        background-color: rgba(156, 94, 50, 0.85);
+                        color: #fff;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                    
+                    button[type="submit"]:hover {
+                        background: linear-gradient(135deg, #353A5F 0%, #9EBAF3 100%);
+                    }
+
+                    input[type="tel"]::placeholder,
+                    input[type="email"]::placeholder,
+                    input[type="message"]::placeholder {
+                        opacity: 0.85;
+                        font-size: 14px;
+                    }
+                    
+
+                    &__policy{
+                        margin-top: 50px;
+                        font-size: 14px;
+
+                        &__link{
+                            text-decoration: none;
+                            color: rgb(63, 31, 7);
+                            font-weight: 500;
+                        }
+
+                        &__link:hover,
+                        &__link:active,
+                        &__link:focus{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            &__pic{
+
+                &__thumb{
+                    border-radius: 20px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+

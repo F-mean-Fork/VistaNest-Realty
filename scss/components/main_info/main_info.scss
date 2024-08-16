@@ -1,0 +1,111 @@
+.intro{
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__container{
+            font-family: 'Manrope', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__intro{
+                position: relative;
+                &__bg{
+                    margin-top: 50px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+    
+                &__title{
+                    position: absolute;
+                    top: 180px;
+                    left: 50px;
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    width: 35%;
+                }
+    
+                &__link{
+                    position: absolute;
+                    top: 100px;
+                    left: 50px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: white;
+                    background: rgba(156, 94, 50, 0.85);
+                    padding: 15px;
+                    border-radius: 10px;
+                } 
+                
+                &__link:hover,
+                &__link:active,
+                &__link:focus{
+                    text-decoration: underline;
+                }
+            }
+
+            &__contacts{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                
+
+                &__desc{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;       
+                    gap: 20px;
+
+                    &__item{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap:20px;
+                        width: 33%;
+                        background: transparent;
+                        border: 3px solid rgba(152, 101, 61);
+                        border-radius: 20px;
+                        height: 110px;
+                        padding: 10px;
+
+                        &__link{
+                            color: black;
+                            text-align: center;
+                            text-decoration: none;
+                        }
+
+                        &__link:hover,
+                        &__link:active,
+                        &__link:focus{
+                            text-decoration: underline;
+                            transform: scale(1.06);
+                        }
+                    }
+                }
+            }
+
+            &__desc{
+                display: flex;
+                gap: 40px;
+
+                &__info{
+                    text-align: justify;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+
+                &__pic{
+                    width: 40%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}

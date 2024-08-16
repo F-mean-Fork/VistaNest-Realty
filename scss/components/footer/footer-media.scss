@@ -1,0 +1,75 @@
+@media screen and (min-width: ($breakpoint_xm)) and (max-width: $breakpoint_sm) {
+    .footer{
+        margin-top: 50px;
+        .wrapper{
+            width: 100%;
+            background: #191919;
+            height: auto;
+            display: flex;
+            justify-content: center;
+    
+            &__container{
+                display: flex;
+                width: 95%;
+                padding: 20px;
+                flex-direction: column;
+                gap:40px;
+
+                &__nav{
+                    display: flex;
+                    gap: 100px;
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        }
+    
+    }
+
+}
+
+@media screen and (min-width: ($breakpoint_sm + 1)) and (max-width: $breakpoint_md){
+    .footer{
+        margin-top: 50px;
+        .wrapper{
+            width: 100%;
+            background: #191919;
+            height: auto;
+            display: flex;
+            justify-content: center;
+    
+            &__container{
+                display: flex;
+                width: 95%;
+                padding: 20px;
+                flex-direction: column;
+                gap:40px;
+            }
+        }
+    
+    }
+
+}
+
+@media screen and (min-width: ($breakpoint_md + 1)) and (max-width: $breakpoint_lg) {
+    .footer{
+        margin-top: 50px;
+        .wrapper{
+            width: 100%;
+            background: #191919;
+            height: auto;
+            display: flex;
+            justify-content: center;
+    
+            &__container{
+                display: flex;
+                width: 95%;
+                padding: 20px;
+                flex-direction: column;
+                gap:40px;
+            }
+        }
+    
+    }
+
+}

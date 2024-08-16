@@ -1,0 +1,71 @@
+.complexes{
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        &__container{
+            font-family: 'Manrope', sans-serif;
+            display: flex;
+
+            &__cards{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                width: 100%;
+                height: auto;
+                gap: 50px;
+
+                &__item{
+                    border: 2px solid rgba(152, 101, 61, 0.2);
+                    border-radius: 40px 40px 10px 10px;
+
+                    &__pic{
+                        &__thumb{
+                            border-radius: 10px;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &__desc{
+                        padding: 0 20px;
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 10px;
+
+                        &__title{
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: rgba(87, 54, 31, 0.95);
+                            text-decoration: underline;
+                        }
+
+                        &__info{
+                            font-size: 14px;
+                            text-align: justify;
+                        }
+
+                        &__price{
+                            font-size: 22px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                .wrapper__container__cards__item {
+                    &:nth-child(4) {
+                      .wrapper__container__cards__item__desc__price {
+                        margin-top: 20px;
+                      }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,42 @@
+.policy{
+    .wrapper{
+        padding: 0 50px;
+        &__header{
+            font-weight: 900;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 140px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        &__subtitle{
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 30px;
+            text-align: center;
+            padding: 0;
+        }
+
+        &__desc{
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        &__desc a{
+            text-decoration: none;
+            color: rgba(132, 67, 21, 0.85);
+            font-weight: 700;
+        }
+        
+        &__desc a:hover,
+        &__desc a:active,
+        &__desc a:focus{
+            text-decoration: underline;
+        }
+    }
+}
+
+
